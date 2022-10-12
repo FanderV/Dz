@@ -1,12 +1,12 @@
-# 1 задание
-
-a = int(input("Введите 1 число: "))
-b = int(input("Введите 2 число: "))
-c = int(input("Введите 3 число: "))
+n = int(input("Введите число: "))
 
 
-def minimum(a, b, c):
-    return min(a, b, c)
+def counter(n):
+    count = 0
+    while n > 0:
+        n = n // 10
+        count = count + 1
+    return (count)
 
 
-print("Наименьшее число:", minimum(a, b, c))
+print("Количество цифр в числе:", counter(n))
