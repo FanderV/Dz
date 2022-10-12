@@ -1,12 +1,12 @@
-# 1 задание
-
-a = int(input("Введите 1 число: "))
-b = int(input("Введите 2 число: "))
-c = int(input("Введите 3 число: "))
+# задание 3
+n = int(input("Введите число n: "))
 
 
-def minimum(a, b, c):
-    return min(a, b, c)
+def sum(n):
+    summa = 0
+    for i in range(1, n + 1):
+        summa = summa + i
+    return summa
 
 
-print("Наименьшее число:", minimum(a, b, c))
+print("Сумма чисел:", sum(n))
