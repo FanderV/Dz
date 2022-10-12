@@ -1,12 +1,11 @@
-# 1 задание
+n = int(input("Введите число: "))
 
-a = int(input("Введите 1 число: "))
-b = int(input("Введите 2 число: "))
-c = int(input("Введите 3 число: "))
+def factorial(n):
+    sum = 1
+    for i in range(2,n+1):
+        sum=sum*i
+
+    return sum
 
 
-def minimum(a, b, c):
-    return min(a, b, c)
-
-
-print("Наименьшее число:", minimum(a, b, c))
+print("Факториал числа", n , "=" , factorial(n))
